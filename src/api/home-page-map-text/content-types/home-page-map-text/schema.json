@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_page_map_texts",
+  "info": {
+    "singularName": "home-page-map-text",
+    "pluralName": "home-page-map-texts",
+    "displayName": "HomePageMapText"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "index": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 1
+    },
+    "number": {
+      "type": "integer",
+      "required": true
+    },
+    "subtext": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

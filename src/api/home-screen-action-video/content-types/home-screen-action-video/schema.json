@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_screen_action_videos",
+  "info": {
+    "singularName": "home-screen-action-video",
+    "pluralName": "home-screen-action-videos",
+    "displayName": "HomeScreenActionVideo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
