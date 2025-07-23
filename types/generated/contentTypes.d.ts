@@ -444,6 +444,74 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCareerRequestCareerRequest
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'career_requests';
+  info: {
+    displayName: 'CareerRequest';
+    pluralName: 'career-requests';
+    singularName: 'career-request';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contact: Schema.Attribute.String & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::career-request.career-request'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    position: Schema.Attribute.Text;
+    publishedAt: Schema.Attribute.DateTime;
+    resume: Schema.Attribute.Media<'files'> & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiContactUsMessageContactUsMessage
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'contact_us_messages';
+  info: {
+    displayName: 'ContactUsMessage';
+    pluralName: 'contact-us-messages';
+    singularName: 'contact-us-message';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    company: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email & Schema.Attribute.Required;
+    first_name: Schema.Attribute.String & Schema.Attribute.Required;
+    last_name: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-us-message.contact-us-message'
+    > &
+      Schema.Attribute.Private;
+    message: Schema.Attribute.Text & Schema.Attribute.Required;
+    mobile: Schema.Attribute.String;
+    project_type: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCustomerReviewCustomerReview
   extends Struct.CollectionTypeSchema {
   collectionName: 'customer_reviews';
@@ -1248,6 +1316,8 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::about-us-text.about-us-text': ApiAboutUsTextAboutUsText;
       'api::article.article': ApiArticleArticle;
+      'api::career-request.career-request': ApiCareerRequestCareerRequest;
+      'api::contact-us-message.contact-us-message': ApiContactUsMessageContactUsMessage;
       'api::customer-review.customer-review': ApiCustomerReviewCustomerReview;
       'api::featured-product.featured-product': ApiFeaturedProductFeaturedProduct;
       'api::home-page-featured-project.home-page-featured-project': ApiHomePageFeaturedProjectHomePageFeaturedProject;

@@ -26,6 +26,16 @@
       "locale": null
     },
     {
+      "documentId": "zmrysyqrkgp34riubtlhxoaa",
+      "action": "api::career-request.career-request.create",
+      "locale": null
+    },
+    {
+      "documentId": "zp7us8lwqphwmv7xmfyxbthk",
+      "action": "api::contact-us-message.contact-us-message.create",
+      "locale": null
+    },
+    {
       "documentId": "qeo9mxpqot1x7ww15t1mn7bi",
       "action": "api::featured-product.featured-product.find",
       "locale": null

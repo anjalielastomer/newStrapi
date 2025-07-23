@@ -144,6 +144,150 @@
       "locale": null
     },
     {
+      "documentId": "elh5atwjjdvvl687vbkdndhk",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::career-request.career-request",
+      "properties": {
+        "fields": [
+          "name",
+          "contact",
+          "email",
+          "position",
+          "resume"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "sjok6fx5pvnslxod61mqnun0",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::career-request.career-request",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "fwp9k3ukftxdxanyjngadjjv",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::career-request.career-request",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "wpyn8yfy2ltk3xhj67rerdnp",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::career-request.career-request",
+      "properties": {
+        "fields": [
+          "name",
+          "contact",
+          "email",
+          "position",
+          "resume"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "r8e60mf50byssnjnkibndlb3",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::career-request.career-request",
+      "properties": {
+        "fields": [
+          "name",
+          "contact",
+          "email",
+          "position",
+          "resume"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "vywycejyhealcm9yhk8nfi7e",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::contact-us-message.contact-us-message",
+      "properties": {
+        "fields": [
+          "first_name",
+          "last_name",
+          "email",
+          "mobile",
+          "company",
+          "project_type",
+          "message"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "y05b53w71dr8v21595tmggb4",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::contact-us-message.contact-us-message",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "gnbi6iig36o8bb0rnwuxk8jp",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::contact-us-message.contact-us-message",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "en07mbrvj3u4lpmtn6ny3uqi",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::contact-us-message.contact-us-message",
+      "properties": {
+        "fields": [
+          "first_name",
+          "last_name",
+          "email",
+          "mobile",
+          "company",
+          "project_type",
+          "message"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ep05qpky9yy53fcdor6l99s3",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::contact-us-message.contact-us-message",
+      "properties": {
+        "fields": [
+          "first_name",
+          "last_name",
+          "email",
+          "mobile",
+          "company",
+          "project_type",
+          "message"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
       "documentId": "wkmolc9c3j4xt2prtlob0jx0",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
