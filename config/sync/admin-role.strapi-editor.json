@@ -1,0 +1,519 @@
+{
+  "documentId": "rhfqu807ibyp28k2u8es1vga",
+  "name": "Editor",
+  "code": "strapi-editor",
+  "description": "Editors can manage and publish contents including those of other users.",
+  "locale": null,
+  "permissions": [
+    {
+      "documentId": "ukgz4xqt4c4dt6qfuwue5y6m",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::customer-review.customer-review",
+      "properties": {
+        "fields": [
+          "customer_name",
+          "rating",
+          "review",
+          "product"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "o3nan1s4oklga4tsyyxljpae",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::customer-review.customer-review",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "zvfb7r2tid4hg5u0x02cigi5",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::customer-review.customer-review",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "w2onjqvoo9lnmkkp32vak9uj",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::customer-review.customer-review",
+      "properties": {
+        "fields": [
+          "customer_name",
+          "rating",
+          "review",
+          "product"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "je5ju27yh5sc6bd7wofu8ije",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::customer-review.customer-review",
+      "properties": {
+        "fields": [
+          "customer_name",
+          "rating",
+          "review",
+          "product"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "iepo3qt8wp03wbxmhzav79v7",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::featured-product.featured-product",
+      "properties": {
+        "fields": [
+          "index",
+          "product"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "eagcunua2rgd17cu792gzmwu",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::featured-product.featured-product",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "tm7nfn8rxfvwfeh4thdnzdcx",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::featured-product.featured-product",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "b2uw5mggawq9nhlvvb2ltomr",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::featured-product.featured-product",
+      "properties": {
+        "fields": [
+          "index",
+          "product"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "oysgcvylmunfd8su0ws4nvlq",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::featured-product.featured-product",
+      "properties": {
+        "fields": [
+          "index",
+          "product"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "yp1p46cuhtzacpgup88k4zh7",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::home-page-featured-project.home-page-featured-project",
+      "properties": {
+        "fields": [
+          "index",
+          "title",
+          "image",
+          "description",
+          "subtext"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ev3y65zct48t7gfb20trrded",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::home-page-featured-project.home-page-featured-project",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "gfjthm8tj5d2018khbo9bnxe",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::home-page-featured-project.home-page-featured-project",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "qavt8hl0cjti4s0qy7ng7xy9",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::home-page-featured-project.home-page-featured-project",
+      "properties": {
+        "fields": [
+          "index",
+          "title",
+          "image",
+          "description",
+          "subtext"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "eia3s8socv5quu9zdy41hpml",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::home-page-featured-project.home-page-featured-project",
+      "properties": {
+        "fields": [
+          "index",
+          "title",
+          "image",
+          "description",
+          "subtext"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "lonhn7abqhpfs8lq8i0a3187",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::home-page-latest-insight.home-page-latest-insight",
+      "properties": {
+        "fields": [
+          "title",
+          "image",
+          "description",
+          "date",
+          "read_time"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ue8h3v3q8mvkj6bfn8nxea8u",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::home-page-latest-insight.home-page-latest-insight",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "p4x1x5finx4cfh29uiyvg08f",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::home-page-latest-insight.home-page-latest-insight",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "b767ss8ywk8h9jhpk79xh8r6",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::home-page-latest-insight.home-page-latest-insight",
+      "properties": {
+        "fields": [
+          "title",
+          "image",
+          "description",
+          "date",
+          "read_time"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "vybiu3s8gavf71rg7pgytnop",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::home-page-latest-insight.home-page-latest-insight",
+      "properties": {
+        "fields": [
+          "title",
+          "image",
+          "description",
+          "date",
+          "read_time"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ue9ne7qjxgdp43pt7rrzqt0n",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::home-page-map-text.home-page-map-text",
+      "properties": {
+        "fields": [
+          "index",
+          "number",
+          "subtext",
+          "description"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "y20vhy3nmg32xwa8ih3vvn29",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::home-page-map-text.home-page-map-text",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "trlviqlugggo3ce3q7hl1do2",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::home-page-map-text.home-page-map-text",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "lcl2se4gpan6gv3keb5pcloa",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::home-page-map-text.home-page-map-text",
+      "properties": {
+        "fields": [
+          "index",
+          "number",
+          "subtext",
+          "description"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "lac37b3upigi2dpy0f50hf67",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::home-page-map-text.home-page-map-text",
+      "properties": {
+        "fields": [
+          "index",
+          "number",
+          "subtext",
+          "description"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "g5xsgh432i8pq9ayz2ejxlcn",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::home-screen-action-video.home-screen-action-video",
+      "properties": {
+        "fields": [
+          "link"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "co1qizdgp790quffo7yfziba",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::home-screen-action-video.home-screen-action-video",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "i5a5jbl9pdd8qa50t86al6gh",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::home-screen-action-video.home-screen-action-video",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "jdc771c53ip59q4h0re2lnvg",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::home-screen-action-video.home-screen-action-video",
+      "properties": {
+        "fields": [
+          "link"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "egrg3qs6z772nsp5gpz1kqno",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::home-screen-action-video.home-screen-action-video",
+      "properties": {
+        "fields": [
+          "link"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ox9c00nmvdms9udn1v6sygam",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::product.product",
+      "properties": {
+        "fields": [
+          "title",
+          "images",
+          "description",
+          "key_features",
+          "customer_reviews"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "dv3mv5a9ubes0frilp6t9btf",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::product.product",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "c08hrxksmyt9ap8tv288davi",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::product.product",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "w69s0onvr7hye59qcfhe3w5i",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::product.product",
+      "properties": {
+        "fields": [
+          "title",
+          "images",
+          "description",
+          "key_features",
+          "customer_reviews"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "gz9jls44kiz6itj0mp8fnfhk",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::product.product",
+      "properties": {
+        "fields": [
+          "title",
+          "images",
+          "description",
+          "key_features",
+          "customer_reviews"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "onl8zgdu53wnll8cjdp43vp3",
+      "action": "plugin::upload.assets.copy-link",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "hgquhay4wtitzol5al593fw8",
+      "action": "plugin::upload.assets.create",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "pqbx2nhmijyuqkzncbl7yxfn",
+      "action": "plugin::upload.assets.download",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "okxbys15xu9at3pipqqvzjgq",
+      "action": "plugin::upload.assets.update",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "d61nhkg498i9d5zg91vbhu94",
+      "action": "plugin::upload.configure-view",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "eys8i9lboeql7te73ix94n39",
+      "action": "plugin::upload.read",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    }
+  ]
+}
