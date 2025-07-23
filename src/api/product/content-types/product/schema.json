@@ -28,7 +28,10 @@
       "required": true
     },
     "key_features": {
-      "type": "json"
+      "type": "component",
+      "component": "common.text",
+      "repeatable": true,
+      "required": true
     },
     "customer_reviews": {
       "type": "relation",

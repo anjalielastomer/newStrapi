@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-07-23T15:25:51.957Z"
+    "x-generation-date": "2025-07-23T16:35:58.647Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -11083,7 +11083,12 @@
               "description": {
                 "type": "string"
               },
-              "key_features": {},
+              "key_features": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/CommonTextComponent"
+                }
+              },
               "customer_reviews": {
                 "type": "array",
                 "items": {
@@ -11283,6 +11288,17 @@
           },
           "meta": {
             "type": "object"
+          }
+        }
+      },
+      "CommonTextComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "text": {
+            "type": "string"
           }
         }
       },
@@ -11999,7 +12015,12 @@
               "description": {
                 "type": "string"
               },
-              "key_features": {},
+              "key_features": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/CommonTextComponent"
+                }
+              },
               "customer_reviews": {
                 "type": "array",
                 "items": {
@@ -15092,7 +15113,8 @@
             "required": [
               "title",
               "images",
-              "description"
+              "description",
+              "key_features"
             ],
             "type": "object",
             "properties": {
@@ -15116,7 +15138,12 @@
               "description": {
                 "type": "string"
               },
-              "key_features": {},
+              "key_features": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/CommonTextComponent"
+                }
+              },
               "customer_reviews": {
                 "type": "array",
                 "items": {
@@ -15192,7 +15219,8 @@
         "required": [
           "title",
           "images",
-          "description"
+          "description",
+          "key_features"
         ],
         "properties": {
           "id": {
@@ -15808,7 +15836,12 @@
           "description": {
             "type": "string"
           },
-          "key_features": {},
+          "key_features": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommonTextComponent"
+            }
+          },
           "customer_reviews": {
             "type": "array",
             "items": {
@@ -15976,7 +16009,12 @@
                     "description": {
                       "type": "string"
                     },
-                    "key_features": {},
+                    "key_features": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/CommonTextComponent"
+                      }
+                    },
                     "customer_reviews": {
                       "type": "array",
                       "items": {

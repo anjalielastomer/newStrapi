@@ -666,7 +666,7 @@
       "locale": null
     },
     {
-      "documentId": "v2hccbn6upgtj6jzt9nzyocy",
+      "documentId": "eyf99sksl7gq1jy624dlngcv",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::product.product",
@@ -675,7 +675,7 @@
           "title",
           "images",
           "description",
-          "key_features",
+          "key_features.text",
           "customer_reviews"
         ]
       },
@@ -701,7 +701,7 @@
       "locale": null
     },
     {
-      "documentId": "e7tjg85umkfoqi86ol0z9yi9",
+      "documentId": "trrvjkwn1v654ysmtuyrr3dy",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::product.product",
@@ -710,7 +710,7 @@
           "title",
           "images",
           "description",
-          "key_features",
+          "key_features.text",
           "customer_reviews"
         ]
       },
@@ -718,7 +718,7 @@
       "locale": null
     },
     {
-      "documentId": "z7ny0qkmivtjzoaufna5p6bv",
+      "documentId": "h6u1hqnuau1ozvzpf549q9o3",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::product.product",
@@ -727,7 +727,7 @@
           "title",
           "images",
           "description",
-          "key_features",
+          "key_features.text",
           "customer_reviews"
         ]
       },

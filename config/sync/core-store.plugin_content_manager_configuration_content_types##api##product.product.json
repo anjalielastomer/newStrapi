@@ -61,20 +61,6 @@
           "sortable": true
         }
       },
-      "key_features": {
-        "edit": {
-          "label": "key_features",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "key_features",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "customer_reviews": {
         "edit": {
           "label": "customer_reviews",
@@ -86,6 +72,20 @@
         },
         "list": {
           "label": "customer_reviews",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "key_features": {
+        "edit": {
+          "label": "key_features",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "key_features",
           "searchable": false,
           "sortable": false
         }
@@ -183,14 +183,14 @@
         ],
         [
           {
-            "name": "key_features",
-            "size": 12
+            "name": "customer_reviews",
+            "size": 6
           }
         ],
         [
           {
-            "name": "customer_reviews",
-            "size": 6
+            "name": "key_features",
+            "size": 12
           }
         ]
       ]

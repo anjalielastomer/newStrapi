@@ -387,7 +387,6 @@
           "title",
           "images",
           "description",
-          "key_features",
           "customer_reviews"
         ]
       },
@@ -422,7 +421,6 @@
           "title",
           "images",
           "description",
-          "key_features",
           "customer_reviews"
         ]
       },
@@ -439,7 +437,6 @@
           "title",
           "images",
           "description",
-          "key_features",
           "customer_reviews"
         ]
       },

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_common_texts",
+  "info": {
+    "displayName": "Text"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}
