@@ -6,6 +6,144 @@
   "locale": null,
   "permissions": [
     {
+      "documentId": "iky6q9h7ziufj9vx2uyart2w",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::about-us-text.about-us-text",
+      "properties": {
+        "fields": [
+          "number",
+          "subtext",
+          "description"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "nygavmmfyybp96d1oxvfpm6y",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::about-us-text.about-us-text",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ceeg3bx3mzj2eqfymh2wzn98",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::about-us-text.about-us-text",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "jjwbsclozm230wffdzvljcu0",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::about-us-text.about-us-text",
+      "properties": {
+        "fields": [
+          "number",
+          "subtext",
+          "description"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "rblrmqammjskkcsl6z8qosjg",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::about-us-text.about-us-text",
+      "properties": {
+        "fields": [
+          "number",
+          "subtext",
+          "description"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "myi6a5v7cv4fqjpjguj423yh",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "title",
+          "short_description",
+          "cover_image",
+          "author",
+          "publish_time",
+          "read_time_text",
+          "content"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "lba0ozwzjgp1ifwe55ig74oo",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::article.article",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "v0ktotzdoexz7iaix1s42urf",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::article.article",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "xvwigu3aozy66levm6p97jxf",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "title",
+          "short_description",
+          "cover_image",
+          "author",
+          "publish_time",
+          "read_time_text",
+          "content"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "knis0pjrtbwwx7xbirx12h5j",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "title",
+          "short_description",
+          "cover_image",
+          "author",
+          "publish_time",
+          "read_time_text",
+          "content"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
       "documentId": "wkmolc9c3j4xt2prtlob0jx0",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
@@ -132,17 +270,14 @@
       "locale": null
     },
     {
-      "documentId": "zle1jg1lkj475b7r7qzdhh96",
+      "documentId": "mb913chssiov88wwmr9qpfye",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::home-page-featured-project.home-page-featured-project",
       "properties": {
         "fields": [
           "index",
-          "title",
-          "image",
-          "description",
-          "subtext"
+          "project"
         ]
       },
       "conditions": [],
@@ -167,34 +302,28 @@
       "locale": null
     },
     {
-      "documentId": "hzh0cpla8g2xs25vokkiw25t",
+      "documentId": "hpn30s5ce3ynkmn0w38pu5y3",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::home-page-featured-project.home-page-featured-project",
       "properties": {
         "fields": [
           "index",
-          "title",
-          "image",
-          "description",
-          "subtext"
+          "project"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "hdxz5h43grmjde4wm66wbz7d",
+      "documentId": "stbj0z7sc6bt9gemol7ocdjc",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::home-page-featured-project.home-page-featured-project",
       "properties": {
         "fields": [
           "index",
-          "title",
-          "image",
-          "description",
-          "subtext"
+          "project"
         ]
       },
       "conditions": [],
@@ -270,7 +399,7 @@
       "locale": null
     },
     {
-      "documentId": "eh9t9cn3aplwk4bq78o9ouod",
+      "documentId": "lvebpqbdcyxxg25lvmuzydkb",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::home-page-map-text.home-page-map-text",
@@ -304,7 +433,7 @@
       "locale": null
     },
     {
-      "documentId": "z2ahkq6nyrmadus2pypwsf43",
+      "documentId": "djv0glgtip4l333jk1jsw5wj",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::home-page-map-text.home-page-map-text",
@@ -320,7 +449,7 @@
       "locale": null
     },
     {
-      "documentId": "jyn9p6mwobuogjpvt9hg2116",
+      "documentId": "nl892wslk77kgr8jj2j4pbjr",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::home-page-map-text.home-page-map-text",
@@ -456,6 +585,75 @@
           "description",
           "key_features",
           "customer_reviews"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "pijpf1p1e0qmovnyzhmd43oz",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {
+        "fields": [
+          "title",
+          "cover_image",
+          "description",
+          "subtext",
+          "content"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "huqs44yqpuu7m7ae91b52yqq",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "wkiomtzelztql9uvpkgylutj",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "h286vdsdak7v2dll4jzun59b",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {
+        "fields": [
+          "title",
+          "cover_image",
+          "description",
+          "subtext",
+          "content"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ms8v15vjg001dw33xoqp2ve1",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {
+        "fields": [
+          "title",
+          "cover_image",
+          "description",
+          "subtext",
+          "content"
         ]
       },
       "conditions": [],

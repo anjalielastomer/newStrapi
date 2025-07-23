@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_texts",
+  "info": {
+    "singularName": "about-us-text",
+    "pluralName": "about-us-texts",
+    "displayName": "AboutUsText"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "subtext": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

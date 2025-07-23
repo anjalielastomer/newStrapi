@@ -17,26 +17,10 @@
       "unique": true,
       "min": 1
     },
-    "title": {
-      "type": "string",
-      "required": true,
-      "unique": false
-    },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "description": {
-      "type": "text",
-      "required": true
-    },
-    "subtext": {
-      "type": "string",
-      "required": true
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project"
     }
   }
 }

@@ -138,11 +138,7 @@
       "subject": "api::home-page-featured-project.home-page-featured-project",
       "properties": {
         "fields": [
-          "index",
-          "title",
-          "image",
-          "description",
-          "subtext"
+          "index"
         ]
       },
       "conditions": [],
@@ -173,11 +169,7 @@
       "subject": "api::home-page-featured-project.home-page-featured-project",
       "properties": {
         "fields": [
-          "index",
-          "title",
-          "image",
-          "description",
-          "subtext"
+          "index"
         ]
       },
       "conditions": [],
@@ -190,11 +182,7 @@
       "subject": "api::home-page-featured-project.home-page-featured-project",
       "properties": {
         "fields": [
-          "index",
-          "title",
-          "image",
-          "description",
-          "subtext"
+          "index"
         ]
       },
       "conditions": [],
@@ -277,7 +265,6 @@
       "properties": {
         "fields": [
           "index",
-          "number",
           "subtext",
           "description"
         ]
@@ -311,7 +298,6 @@
       "properties": {
         "fields": [
           "index",
-          "number",
           "subtext",
           "description"
         ]
@@ -327,7 +313,6 @@
       "properties": {
         "fields": [
           "index",
-          "number",
           "subtext",
           "description"
         ]

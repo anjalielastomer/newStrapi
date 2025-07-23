@@ -6,6 +6,26 @@
   "locale": null,
   "permissions": [
     {
+      "documentId": "d6bvj0p2ig0peyfkqlf3wz3y",
+      "action": "api::about-us-text.about-us-text.find",
+      "locale": null
+    },
+    {
+      "documentId": "idr6733dhlre3gbkv7ok5rsy",
+      "action": "api::about-us-text.about-us-text.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "ey6jwh6gu6rya1by3apz72if",
+      "action": "api::article.article.find",
+      "locale": null
+    },
+    {
+      "documentId": "ecbtvpczut8zuz54ayoeg4ji",
+      "action": "api::article.article.findOne",
+      "locale": null
+    },
+    {
       "documentId": "qeo9mxpqot1x7ww15t1mn7bi",
       "action": "api::featured-product.featured-product.find",
       "locale": null
@@ -58,6 +78,16 @@
     {
       "documentId": "q39a2lajsn1o5pcmbbo8r3ne",
       "action": "api::product.product.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "gjqdpe6ufztsdc8c6nulleo8",
+      "action": "api::project.project.find",
+      "locale": null
+    },
+    {
+      "documentId": "d9lmgmf7pn8di0rfqfmhqmpf",
+      "action": "api::project.project.findOne",
       "locale": null
     },
     {

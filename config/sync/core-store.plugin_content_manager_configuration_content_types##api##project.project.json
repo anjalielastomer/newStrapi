@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::home-page-map-text.home-page-map-text",
+  "key": "plugin_content_manager_configuration_content_types::api::project.project",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "subtext",
-      "defaultSortBy": "subtext",
+      "mainField": "title",
+      "defaultSortBy": "title",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,30 +19,44 @@
           "sortable": true
         }
       },
-      "index": {
+      "title": {
         "edit": {
-          "label": "index",
+          "label": "title",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "index",
+          "label": "title",
           "searchable": true,
           "sortable": true
         }
       },
-      "number": {
+      "cover_image": {
         "edit": {
-          "label": "number",
+          "label": "cover_image",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "number",
+          "label": "cover_image",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
           "searchable": true,
           "sortable": true
         }
@@ -61,18 +75,18 @@
           "sortable": true
         }
       },
-      "description": {
+      "content": {
         "edit": {
-          "label": "description",
+          "label": "content",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "description",
-          "searchable": true,
-          "sortable": true
+          "label": "content",
+          "searchable": false,
+          "sortable": false
         }
       },
       "createdAt": {
@@ -145,36 +159,40 @@
     "layouts": {
       "list": [
         "id",
-        "index",
-        "subtext",
-        "number"
+        "title",
+        "cover_image",
+        "description"
       ],
       "edit": [
         [
           {
-            "name": "index",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "subtext",
+            "name": "title",
             "size": 6
           },
           {
-            "name": "description",
+            "name": "cover_image",
             "size": 6
           }
         ],
         [
           {
-            "name": "number",
+            "name": "description",
             "size": 6
+          },
+          {
+            "name": "subtext",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "content",
+            "size": 12
           }
         ]
       ]
     },
-    "uid": "api::home-page-map-text.home-page-map-text"
+    "uid": "api::project.project"
   },
   "type": "object",
   "environment": null,

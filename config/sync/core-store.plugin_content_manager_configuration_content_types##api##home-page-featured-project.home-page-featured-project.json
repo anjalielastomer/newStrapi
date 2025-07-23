@@ -6,8 +6,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "documentId",
+      "defaultSortBy": "documentId",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -33,58 +33,17 @@
           "sortable": true
         }
       },
-      "title": {
+      "project": {
         "edit": {
-          "label": "title",
+          "label": "project",
           "description": "",
           "placeholder": "",
           "visible": true,
-          "editable": true
+          "editable": true,
+          "mainField": "title"
         },
         "list": {
-          "label": "title",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "image": {
-        "edit": {
-          "label": "image",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "image",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "description": {
-        "edit": {
-          "label": "description",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "description",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "subtext": {
-        "edit": {
-          "label": "subtext",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "subtext",
+          "label": "project",
           "searchable": true,
           "sortable": true
         }
@@ -160,8 +119,7 @@
       "list": [
         "id",
         "index",
-        "title",
-        "image"
+        "project"
       ],
       "edit": [
         [
@@ -170,23 +128,7 @@
             "size": 4
           },
           {
-            "name": "title",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "image",
-            "size": 6
-          },
-          {
-            "name": "description",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "subtext",
+            "name": "project",
             "size": 6
           }
         ]
