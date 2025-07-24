@@ -666,7 +666,67 @@
       "locale": null
     },
     {
-      "documentId": "eyf99sksl7gq1jy624dlngcv",
+      "documentId": "obzb54z2bkd9ds0zyfro8ve2",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::product-category.product-category",
+      "properties": {
+        "fields": [
+          "name",
+          "products"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "mo08s0054yn0b2y5dp20x8qf",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::product-category.product-category",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "w15rzbfule9lgudl5vjqalm6",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::product-category.product-category",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "k8y26mw7o831u5xxp1s2x007",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::product-category.product-category",
+      "properties": {
+        "fields": [
+          "name",
+          "products"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ro70w7ed0mmjk6gvjd5d21ie",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::product-category.product-category",
+      "properties": {
+        "fields": [
+          "name",
+          "products"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "u20okey7hxuealtoqd82g27o",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::product.product",
@@ -676,7 +736,8 @@
           "images",
           "description",
           "key_features.text",
-          "customer_reviews"
+          "customer_reviews",
+          "product_categories"
         ]
       },
       "conditions": [],
@@ -701,7 +762,7 @@
       "locale": null
     },
     {
-      "documentId": "trrvjkwn1v654ysmtuyrr3dy",
+      "documentId": "glm2u6v3n4xbvl9509rwqpc4",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::product.product",
@@ -711,14 +772,15 @@
           "images",
           "description",
           "key_features.text",
-          "customer_reviews"
+          "customer_reviews",
+          "product_categories"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "h6u1hqnuau1ozvzpf549q9o3",
+      "documentId": "njsbfipnmlh7d2iiftv3p9ox",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::product.product",
@@ -728,21 +790,22 @@
           "images",
           "description",
           "key_features.text",
-          "customer_reviews"
+          "customer_reviews",
+          "product_categories"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "pijpf1p1e0qmovnyzhmd43oz",
+      "documentId": "zar9c9jcjdxbmcerc6rhkcu1",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::project.project",
       "properties": {
         "fields": [
           "title",
-          "cover_image",
+          "cover_images",
           "description",
           "subtext",
           "content"
@@ -770,14 +833,14 @@
       "locale": null
     },
     {
-      "documentId": "h286vdsdak7v2dll4jzun59b",
+      "documentId": "yi8k5yuo116vuviewmjotwb2",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::project.project",
       "properties": {
         "fields": [
           "title",
-          "cover_image",
+          "cover_images",
           "description",
           "subtext",
           "content"
@@ -787,14 +850,14 @@
       "locale": null
     },
     {
-      "documentId": "ms8v15vjg001dw33xoqp2ve1",
+      "documentId": "v3c6esoeqiswkoqguvgdfbs6",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::project.project",
       "properties": {
         "fields": [
           "title",
-          "cover_image",
+          "cover_images",
           "description",
           "subtext",
           "content"

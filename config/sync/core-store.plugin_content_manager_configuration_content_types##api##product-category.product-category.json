@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::product.product",
+  "key": "plugin_content_manager_configuration_content_types::api::product-category.product-category",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "name",
+      "defaultSortBy": "name",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,88 +19,31 @@
           "sortable": true
         }
       },
-      "title": {
+      "name": {
         "edit": {
-          "label": "title",
+          "label": "name",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "title",
+          "label": "name",
           "searchable": true,
           "sortable": true
         }
       },
-      "images": {
+      "products": {
         "edit": {
-          "label": "images",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "images",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "description": {
-        "edit": {
-          "label": "description",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "description",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "key_features": {
-        "edit": {
-          "label": "key_features",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "key_features",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "customer_reviews": {
-        "edit": {
-          "label": "customer_reviews",
+          "label": "products",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "customer_name"
+          "mainField": "title"
         },
         "list": {
-          "label": "customer_reviews",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "product_categories": {
-        "edit": {
-          "label": "product_categories",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "product_categories",
+          "label": "products",
           "searchable": false,
           "sortable": false
         }
@@ -175,48 +118,24 @@
     "layouts": {
       "list": [
         "id",
-        "title",
-        "images",
-        "description"
+        "name",
+        "products",
+        "createdAt"
       ],
       "edit": [
         [
           {
-            "name": "title",
+            "name": "name",
             "size": 6
           },
           {
-            "name": "images",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "description",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "customer_reviews",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "key_features",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "product_categories",
+            "name": "products",
             "size": 6
           }
         ]
       ]
     },
-    "uid": "api::product.product"
+    "uid": "api::product-category.product-category"
   },
   "type": "object",
   "environment": null,

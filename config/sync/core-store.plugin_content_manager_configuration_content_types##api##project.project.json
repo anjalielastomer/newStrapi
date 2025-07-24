@@ -33,16 +33,16 @@
           "sortable": true
         }
       },
-      "cover_image": {
+      "cover_images": {
         "edit": {
-          "label": "cover_image",
+          "label": "cover_images",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "cover_image",
+          "label": "cover_images",
           "searchable": false,
           "sortable": false
         }
@@ -160,17 +160,13 @@
       "list": [
         "id",
         "title",
-        "cover_image",
-        "description"
+        "description",
+        "cover_images"
       ],
       "edit": [
         [
           {
             "name": "title",
-            "size": 6
-          },
-          {
-            "name": "cover_image",
             "size": 6
           }
         ],
@@ -188,6 +184,12 @@
           {
             "name": "content",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "cover_images",
+            "size": 6
           }
         ]
       ]
