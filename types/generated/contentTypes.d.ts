@@ -731,6 +731,36 @@ export interface ApiHomeScreenActionVideoHomeScreenActionVideo
   };
 }
 
+export interface ApiProductCategoryProductCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'product_categories';
+  info: {
+    displayName: 'ProductCategory';
+    pluralName: 'product-categories';
+    singularName: 'product-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::product-category.product-category'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   collectionName: 'products';
   info: {
@@ -759,6 +789,10 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'api::product.product'
     > &
       Schema.Attribute.Private;
+    product_categories: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::product-category.product-category'
+    >;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
@@ -786,7 +820,8 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
           preset: 'defaultHtml';
         }
       >;
-    cover_image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    cover_images: Schema.Attribute.Media<'images', true> &
+      Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1325,6 +1360,7 @@ declare module '@strapi/strapi' {
       'api::home-page-latest-insight.home-page-latest-insight': ApiHomePageLatestInsightHomePageLatestInsight;
       'api::home-page-map-text.home-page-map-text': ApiHomePageMapTextHomePageMapText;
       'api::home-screen-action-video.home-screen-action-video': ApiHomeScreenActionVideoHomeScreenActionVideo;
+      'api::product-category.product-category': ApiProductCategoryProductCategory;
       'api::product.product': ApiProductProduct;
       'api::project.project': ApiProjectProject;
       'plugin::content-releases.release': PluginContentReleasesRelease;

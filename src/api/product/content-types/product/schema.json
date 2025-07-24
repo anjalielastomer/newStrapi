@@ -38,6 +38,12 @@
       "relation": "oneToMany",
       "target": "api::customer-review.customer-review",
       "mappedBy": "product"
+    },
+    "product_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product-category.product-category",
+      "mappedBy": "products"
     }
   }
 }
