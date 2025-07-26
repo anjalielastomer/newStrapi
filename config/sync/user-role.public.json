@@ -91,6 +91,11 @@
       "locale": null
     },
     {
+      "documentId": "f9dvbiq0kjnij111yz00h93e",
+      "action": "api::mailing-list.mailing-list.create",
+      "locale": null
+    },
+    {
       "documentId": "f5mk4afh0glvp3vstdccxk0z",
       "action": "api::product-category.product-category.find",
       "locale": null

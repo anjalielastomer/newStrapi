@@ -731,6 +731,36 @@ export interface ApiHomeScreenActionVideoHomeScreenActionVideo
   };
 }
 
+export interface ApiMailingListMailingList extends Struct.CollectionTypeSchema {
+  collectionName: 'mailing_lists';
+  info: {
+    displayName: 'MailingList';
+    pluralName: 'mailing-lists';
+    singularName: 'mailing-list';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::mailing-list.mailing-list'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProductCategoryProductCategory
   extends Struct.CollectionTypeSchema {
   collectionName: 'product_categories';
@@ -1360,6 +1390,7 @@ declare module '@strapi/strapi' {
       'api::home-page-latest-insight.home-page-latest-insight': ApiHomePageLatestInsightHomePageLatestInsight;
       'api::home-page-map-text.home-page-map-text': ApiHomePageMapTextHomePageMapText;
       'api::home-screen-action-video.home-screen-action-video': ApiHomeScreenActionVideoHomeScreenActionVideo;
+      'api::mailing-list.mailing-list': ApiMailingListMailingList;
       'api::product-category.product-category': ApiProductCategoryProductCategory;
       'api::product.product': ApiProductProduct;
       'api::project.project': ApiProjectProject;
