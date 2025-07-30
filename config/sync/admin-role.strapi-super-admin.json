@@ -666,6 +666,63 @@
       "locale": null
     },
     {
+      "documentId": "a05qtbbexcn4ilwhpqtpp1w0",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::mailing-list.mailing-list",
+      "properties": {
+        "fields": [
+          "email"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "g83dr51063crmcmd3dzuq6eg",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::mailing-list.mailing-list",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "vbnkpqiqz4xn9bajve1usqz1",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::mailing-list.mailing-list",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "mrng6d6a6yzo024xwk96hwkb",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::mailing-list.mailing-list",
+      "properties": {
+        "fields": [
+          "email"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "hoegdgejywuqceg7gcpa9c43",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::mailing-list.mailing-list",
+      "properties": {
+        "fields": [
+          "email"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
       "documentId": "obzb54z2bkd9ds0zyfro8ve2",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
