@@ -44,6 +44,9 @@
       "relation": "manyToMany",
       "target": "api::product-category.product-category",
       "mappedBy": "products"
+    },
+    "specification": {
+      "type": "richtext"
     }
   }
 }
