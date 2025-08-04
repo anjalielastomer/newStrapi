@@ -105,6 +105,20 @@
           "sortable": false
         }
       },
+      "specification": {
+        "edit": {
+          "label": "specification",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "specification",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -212,6 +226,12 @@
           {
             "name": "product_categories",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "specification",
+            "size": 12
           }
         ]
       ]

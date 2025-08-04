@@ -10,6 +10,8 @@ export default {
    */
   register({ strapi }: { strapi: Core.Strapi }) {
     setupNotificationPageActions(strapi);
+    setupCareerRequestNotificationActions(strapi);
+    setupContactUsNotificationActions(strapi);
   },
 
   /**
@@ -48,6 +50,42 @@ function setupNotificationPageActions(strapi: Core.Strapi) {
           strapi.log.info(`Email sent to Mailing List. Message ID: ${info.messageId}`);
         }).catch((error) => {
           strapi.log.error(`Failed to send email to Mailing List. Error: ${error.message}`);
+        });
+      })();
+    }
+    return next();
+  });
+}
+
+function setupCareerRequestNotificationActions(strapi: Core.Strapi) {
+  strapi.documents.use(async (ctx, next) => {
+    if (ctx.action == 'create' && ctx.uid === 'api::career-request.career-request') {
+      (async () => {
+        const subject = "New Career Request Received";
+        const text = `Hi Team,\n\nA new career request has been submitted.\n\nDetails:\n- Name: ${ctx.params.data.name}\n- Email: ${ctx.params.data.email}\n- Mobile: ${ctx.params.data.contact}\n- Position: ${ctx.params.data.position}\n\nPlease review the request at your earliest convenience.\n\nBest regards,\nAnjali Elastomer Team`;
+        Mailer.transport.sendMail({
+          ...Mailer.defaultParams,
+          to: 'careers@anjalielastomer.com',
+          subject: subject,
+          text: text,
+        });
+      })();
+    }
+    return next();
+  });
+}
+
+function setupContactUsNotificationActions(strapi: Core.Strapi) {
+  strapi.documents.use(async (ctx, next) => {
+    if (ctx.action == 'create' && ctx.uid === 'api::contact-us-message.contact-us-message') {
+      (async () => {
+        const subject = "New Contact Us Message Received";
+        const text = `Hi Team,\n\nA new message has been received through the Contact Us form.\n\nDetails:\n- Name: ${ctx.params.data.first_name} ${ctx.params.data.last_name}\n- Email: ${ctx.params.data.email}\n- Mobile: ${ctx.params.data.mobile}\n- Company: ${ctx.params.data.company}\n- Project Type: ${ctx.params.data.project_type}\n- Message: ${ctx.params.data.message}\n\nPlease respond to the message at your earliest convenience.\n\nBest regards,\nAnjali Elastomer Team`;
+        Mailer.transport.sendMail({
+          ...Mailer.defaultParams,
+          to: 'info@anjalielastomer.com',
+          subject: subject,
+          text: text,
         });
       })();
     }
