@@ -824,7 +824,13 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       'api::product-category.product-category'
     >;
     publishedAt: Schema.Attribute.DateTime;
-    specification: Schema.Attribute.RichText;
+    specification: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
