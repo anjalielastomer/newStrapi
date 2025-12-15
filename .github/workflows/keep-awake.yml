@@ -1,0 +1,17 @@
+name: Keep Strapi Cloud Awake
+
+on:
+  schedule:
+    # Runs every 10 minutes (adjust as needed, must be at least every 5 minutes)
+    - cron: '*/10 * * * *'
+  workflow_dispatch: 
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Ping Strapi App
+        run: curl -I "${{ secrets.STRAPI_URL }}"
